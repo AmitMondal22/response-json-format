@@ -55,7 +55,7 @@ message: The provided message or a default "Error" message.
 error: The provided error or null if not specified.
 
 **Example**
-<code>
+```javascript
 const { sendOkResponce, sendErrorResponce } = require("response-json-format");
 const my_function = async (req, res) => {
     try {
@@ -65,7 +65,7 @@ const my_function = async (req, res) => {
         res.status(400).json(sendErrorResponce(error, "Error"));
     }
 }
-</code>
+```
 
 This package facilitates consistent JSON response formatting for success and error cases, enhancing the readability and standardization of your application's API responses.
 
